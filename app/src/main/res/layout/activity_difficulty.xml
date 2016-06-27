@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/background"
+android:layoutDirection="ltr"
+tools:context=".Main.DifficultyActivity">
+
+<ImageButton
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    android:id="@+id/back_btn"
+    android:background="@drawable/back"
+    android:layout_alignParentBottom="true"
+    android:layout_marginLeft="10dp"
+    android:layout_marginBottom="10dp" />
+
+<Button
+    android:layout_width="300dp"
+    android:layout_height="100dp"
+    android:text="Easy\n8 cards"
+    android:textSize="22dp"
+    android:textStyle="bold"
+    android:textColor="#000000"
+    android:id="@+id/Easy_btn"
+    android:background="@drawable/btn"
+    android:layout_above="@+id/Mediun_btn"
+    android:layout_alignLeft="@+id/Hard_btn"
+    android:layout_alignStart="@+id/Hard_btn" />
+
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:text="Medium\n12 cards"
+        android:textColor="#000000"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:id="@+id/Mediun_btn"
+        android:background="@drawable/btn"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/Easy_btn"
+        android:layout_alignStart="@+id/Easy_btn" />
+
+<Button
+    android:layout_width="300dp"
+    android:layout_height="100dp"
+    android:text="Hard\n20 cards"
+    android:textColor="#000000"
+    android:textSize="22dp"
+    android:textStyle="bold"
+    android:id="@+id/Hard_btn"
+    android:background="@drawable/btn"
+    android:layout_below="@+id/Mediun_btn"
+    android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
